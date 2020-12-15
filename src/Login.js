@@ -29,7 +29,7 @@ function Login() {
                     src="https://lh3.googleusercontent.com/proxy/KNrjBzCCW-aFyhSXen_NiMicedzCTiN53FVXbt0JbDCpJonEBhe2RuxFydMIthwqlLYoMIQMAImcgduyX8bENxPr5t72ERzeHkjaBkjc6rEAWNi94xkKK339GTqwALb1I4-RC_g_C_h49fY_yw7ZPWgCpZX6BmcjljGCNkTM1cRKJnE5U1KcQw"
                     alt=""
                 />
-                <h1>Sign in to Siteguy Messages Center</h1>
+                <h1>Sign in to Siteguy Message Center</h1>
                 <p>siteguy.dev/message</p>
                 <Button onClick={signIn}>Sign in with Google</Button>
             </div>

@@ -14,9 +14,11 @@ import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
 import db from "./firebase.js";
+import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
     const [channels, setChannels] = useState([]);
+    const [{ user }] = useStateValue();
 
     useEffect(() => {
         // Run this code when component loads
@@ -34,15 +36,15 @@ function Sidebar() {
         <div className="sidebar">
             <div className="sidebar__header">
                 <div className="sidebar__info">
-                    <h2>siteguy.dev</h2>
+                    <h2>Message Center</h2>
                     <h3>
                         <FiberManualRecordIcon />
-                        Danilo Corci
+                        {user?.displayName}
                     </h3>
                 </div>
                 <CreateIcon />
             </div>
-            <SidebarOption Icon={InsertCommentIcon} title="Comments" />
+            {/* <SidebarOption Icon={InsertCommentIcon} title="Comments" />
             <SidebarOption title="MyChannel" />
             <SidebarOption Icon={InboxIcon} title="Mentions & reactions" />
             <SidebarOption Icon={DraftsIcons} title="Saved items" />
@@ -50,7 +52,7 @@ function Sidebar() {
             <SidebarOption Icon={PeopleAltIcon} title="People & user groups" />
             <SidebarOption Icon={AppsIcon} title="Apps" />
             <SidebarOption Icon={fileCopyIcon} title="File browser" />
-            <SidebarOption Icon={ExpandLessIcon} title="Show less" />
+            <SidebarOption Icon={ExpandLessIcon} title="Show less" /> */}
             <hr />
             <SidebarOption Icon={ExpandMoreIcon} title="Channels" />
             <hr />
