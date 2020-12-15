@@ -42,8 +42,8 @@ function Sidebar() {
                 </div>
                 <CreateIcon />
             </div>
-            <SidebarOption Icon={InsertCommentIcon} title="Pau no cu" />
-            <SidebarOption title="Pornhub" />
+            <SidebarOption Icon={InsertCommentIcon} title="Comments" />
+            <SidebarOption title="MyChannel" />
             <SidebarOption Icon={InboxIcon} title="Mentions & reactions" />
             <SidebarOption Icon={DraftsIcons} title="Saved items" />
             <SidebarOption Icon={BookmarkBorderIcon} title="Channel browser" />
